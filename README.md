@@ -1,5 +1,9 @@
 # Weather app
-
+# WARNING
+* Remember our structure is slightly different from the basic instructions
+* Remember to separate user actions from weather api actions
+* Remember there are two types of users: **admin** and **user**
+* Always validate the user type before allowing them to perform actions
 ## STEP 1
 As a best practice, sketch the architecture of your application before you start writing code.
 
