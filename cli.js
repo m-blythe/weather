@@ -1,11 +1,11 @@
 var user = require('./user.js');
-
-function takeInputs(){
-    console.log('WELCOME TO Weather CLI!');
-    var help = `Enter a command. Here are your options:
+var help = `Enter a command. Here are your options:
     - [admin|user] [name] [option1: locatation] //looks up weather
     - create user [name] //creates user
     - exit //exits the program`;
+
+function takeInputs(){
+    console.log('WELCOME TO Weather CLI!');
     console.log(help);
     var stdin = process.openStdin();
     stdin.addListener('data', function(input) {
@@ -19,3 +19,11 @@ function takeInputs(){
     });
 }
 takeInputs();
+
+function issueCommand(args){
+    if(args[0] !== 'user' || args[0] !== 'admin'){
+        console.log('Invalid command');
+        console.log(help);
+        return;
+    }
+}
