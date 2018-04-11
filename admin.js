@@ -4,34 +4,21 @@ var user = require('./user.js');
 //  
 // 
 
-function authorize() {
-    //read the admin.txt file for name;
-    //authorize IF name is found
-    fs.readFile("log.txt", "utf8", function(error, data) {
-
-
-        if (error) {
-            return console.log(error);
-        }
-    
-        console.log(data);
-        //if ()
-    });
-}
-
 
 function Admin() {
     
-    this.newUserSearch = function() {
+    this.newUserSearch = function(name, location) {
         //accept a name and location
         //search for weather in area 
         //save user's information in log
 
-        var newUser = new User("bob", "Houston");
+        var newUser = new User(name, location);
         newUser.getWeather();
-        fs.writeFile("log.txt", `
+        var logTxt = `
 User: ${newUser.name}
-Location: ${newUser.location}`, function(error, data) {
+Location: ${newUser.location}`
+
+        fs.writeFile("log.txt", logTxt, function(error, data) {
 
             if (err) {
                 return console.log(err);
@@ -40,7 +27,15 @@ Location: ${newUser.location}`, function(error, data) {
         })
 
     }
+
+    this.getData = function() {
+        fs.readFile("log.txt", "utft8", function(error, data) {
+            console.log(data);
+        });
+    };
     //newusersearch accept a name and location 
     //getdata log or return list of all searches user have executed thus far 
     //
 }
+
+module.exports = Admin;
