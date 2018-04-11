@@ -1,16 +1,19 @@
 var fs = require('fs');
-var cli = require('./cli.js');
+//var cli = require('./cli.js');
 var weather = require("./weather.js");
 
 
 function User(name, location) {
-
+    console.log('heyooo');
+    console.log(name);
+    console.log(location);
     this.name = name;
     this.location = location;
     this.date = Date.now();
-    this.getWeather = function() {
+    weather.runme(location);
+    /*this.getWeather = function() {
 
-        weather.find({search: this.location, 
+        weather.find({search: this.location,
         degreeType: "F"}, function(err, result)
     {
         if (err) console.log(err);
@@ -19,9 +22,7 @@ function User(name, location) {
     });
 
     };
-
-
-
+*/
 };
 
 module.exports = User;

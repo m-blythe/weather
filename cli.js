@@ -21,8 +21,8 @@ function takeInputs(){
 }
 takeInputs();
 
+
 function issueCommand(args){
-    console.log(args[0]);
     if(args[0] !== 'user' && args[0] !== 'admin'){
         console.log('Invalid command');
         console.log(help);

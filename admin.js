@@ -16,7 +16,7 @@ function Admin() {
         newUser.getWeather();
         var logTxt = `
 User: ${newUser.name}
-Location: ${newUser.location}`
+Location: ${newUser.location}`;
 
         fs.writeFile("log.txt", logTxt, function(error, data) {
 
