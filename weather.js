@@ -1,16 +1,6 @@
 var weather = require('weather-js');
- 
-// Options: 
-// search:     location name or zipcode 
-// degreeType: F or C 
- 
 
 
-
-
-// user's name and location as arguments, and store the value of Date.now() in a date property. 
-// (This will be formatted later.)
-// Constructor function for creating Movie objects
 var UserSearch = function(name,location) {
     // this.cast will hold all of our CastMember objects
     this.name = name;
