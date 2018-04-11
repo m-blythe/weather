@@ -2,7 +2,6 @@ var weather = require('weather-js');
 
 
 var UserSearch = function(name,location) {
-    // this.cast will hold all of our CastMember objects
     this.name = name;
     this.location =location;
     this.Date.now();
