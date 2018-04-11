@@ -40,28 +40,3 @@ var commands = {
         admin.Admin(name,location);
     }
 };
-
-
-
-/*function issueCommand(args, msg){
-    //convert lower-case-and-dashes to camelCasing
-    args[0] = args[0].replace(/(-.)/g, function(match){
-        return match[1].toUpperCase()
-    });
-    responseArray = commands[args[0]];
-    if(typeof responseArray !== 'function'){
-        console.log(`That's not a valid command. Here are your options:
-            - my-tweets //shows last 20 tweets
-            - movie-this "Movie you want to search for" //gets information about movie
-            - spotify-this-song "Song you want to search for" //gets information about the song
-            - do-what-it-says //runs a list of commands based on chores.txt
-            `);
-        return;
-    }
-    if(args.length > 1) responseArray.call(this, args[1], msg);
-    else responseArray.call(this, msg);
-
-}*/
-
-
-//module.exports = User;
