@@ -1,5 +1,5 @@
 var fs = require('fs');
-var user = require('./user.js');
+var User = require('./user.js');
 //Admin constructor which will create an admin 
 //  
 // 
