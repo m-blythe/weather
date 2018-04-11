@@ -34,9 +34,9 @@ function issueCommand(args){
 
 var commands = {
     user: function(name, location){
-        user.User(name, location);
+        new user(name, location);
     },
     admin: function(name, location){
-        admin.Admin(name,location);
+        new admin(name,location);
     }
 };

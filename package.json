@@ -1,0 +1,23 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "",
+  "main": "weather.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-blythe/weather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-blythe/weather/issues"
+  },
+  "homepage": "https://github.com/m-blythe/weather#readme",
+  "dependencies": {
+    "weather-js": "^2.0.0"
+  }
+}
