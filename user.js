@@ -1,6 +1,6 @@
 var fs = require('fs');
 //var cli = require('./cli.js');
-var weather = require("./weather.js");
+var weather = require('./weather.js');
 
 
 function User(name, location) {

@@ -15,7 +15,7 @@ var weather = require('weather-js');
 
 //var newSearch = new UserSearch("Houston");
 //newSearch.
-module.export = {
+module.exports = {
     runme: function(location){
         weather.find({search: location, degreeType: 'F'}, function(err, result) {
             if(err) console.log(err);
