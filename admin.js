@@ -15,7 +15,7 @@ function authorize() {
         }
     
         console.log(data);
-        if ()
+        //if ()
     });
 }
 
