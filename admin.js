@@ -15,8 +15,8 @@ function Admin() {
         var newUser = new User(name, location);
         newUser.getWeather();
         var logTxt = `
-User: ${newUser.name}
-Location: ${newUser.location}`;
+        User: ${newUser.name}
+        Location: ${newUser.location}`;
 
         fs.writeFile("log.txt", logTxt, function(error, data) {
 
@@ -26,7 +26,7 @@ Location: ${newUser.location}`;
             console.log("Log.txt was updated!");
         })
 
-    }
+    };
 
     this.getData = function() {
         fs.readFile("log.txt", "utft8", function(error, data) {

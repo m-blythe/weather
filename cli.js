@@ -1,5 +1,5 @@
-var user = require('./user.js');
-var admin = require('./admin.js');
+var User = require('./user.js');
+var Admin = require('./admin.js');
 var help = `Enter a command. Here are your options:
     - [admin|user] [name] [option1: locatation] //looks up weather
     - create user [name] //creates user
@@ -34,9 +34,10 @@ function issueCommand(args){
 
 var commands = {
     user: function(name, location){
-        new user(name, location);
+        new User(name, location);
     },
     admin: function(name, location){
-        new admin(name,location);
+        var admin = new Admin();
+        admin.newUserSearch(name,location);
     }
 };

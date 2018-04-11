@@ -4,9 +4,6 @@ var weather = require('./weather.js');
 
 
 function User(name, location) {
-    console.log('heyooo');
-    console.log(name);
-    console.log(location);
     this.name = name;
     this.location = location;
     this.date = Date.now();
