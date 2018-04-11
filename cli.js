@@ -34,7 +34,8 @@ function issueCommand(args){
 
 var commands = {
     user: function(name, location){
-        new User(name, location);
+        var user = new User(name, location);
+        user.logSearch();
     },
     admin: function(name, location){
         var admin = new Admin();
